@@ -85,7 +85,7 @@ final class CostumeAPI{
 			}
 		}
 		imagedestroy($img);
-		$player->setSkin(new Skin($skin->getSkinId(), $bytes, "", "geomerty.{$costume}", file_get_contents($loader->getDataFolder() . "Models/" . $costume . ".json")));
+		$player->setSkin(new Skin($skin->getSkinId(), $bytes, "", "geometry.{$costume}", file_get_contents($loader->getDataFolder() . "Models/" . $costume . ".json")));
 		$player->sendSkin(Server::getInstance()->getOnlinePlayers());
 	}
 }
